@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="WPFPageSwitch.Comfirm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"        
+	        d:DesignWidth="1800" d:DesignHeight="1000">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Image Source="/images/food8.jpg" Opacity="0.5" Stretch="UniformToFill"/>
+        <Label Content="  Hello    " FontSize =" 32" FontWeight ="Bold"  HorizontalAlignment="Left" Margin="632,248,0,0" VerticalAlignment="Top" Width="136" Height="57" RenderTransformOrigin="1.839,0.469"/>
+        <Label x:Name="Name_Label" Content="" FontSize="32" FontWeight ="Bold"  HorizontalAlignment="Left" Margin="758,248,0,0" VerticalAlignment="Top" Width="317" Height="62"/>
+        <Label Content="    Is It The Correct Amount ?" FontWeight="Bold" FontSize =" 32" HorizontalAlignment="Left" Margin="613,331,0,0" VerticalAlignment="Top" Width="462" Height="59" RenderTransformOrigin="0.546,1.429"/>
+        <Label Content="$" HorizontalAlignment="Left" FontSize="32"  FontWeight ="Bold" Margin="768,430,0,0" VerticalAlignment="Top" Height="57" RenderTransformOrigin="0.704,0.439"/>
+        <Label x:Name="TextBox_confirm" Content="" FontSize="32"  FontWeight ="Bold" HorizontalAlignment="Left" Margin="805,428,0,0" VerticalAlignment="Top" Width="219" Height="59" RenderTransformOrigin="0.507,0.102"/>
+        <Button Content="YES" FontWeight="Bold" FontSize =" 32" HorizontalAlignment="Left" Margin="644,582,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="1.755,0.364" Click="YES_Button_Click" Height="67"/>
+        <TextBox x:Name="ID_Text_Box" Opacity="0" HorizontalAlignment="Left" Height="23" Margin="747,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button Content="NO" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="903,582,0,0" VerticalAlignment="Top" Width="182" Height="67" Click="Button_Click"/>
+    </Grid>
+</UserControl>

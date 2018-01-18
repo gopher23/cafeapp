@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="WPFPageSwitch.Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+            x:Name="UserControl"
+	        d:DesignWidth="1800" d:DesignHeight="1000">
+    <Grid x:Name="LayoutRoot">
+        <Image Source="/images/food8.jpg" Opacity="0.5" Stretch="UniformToFill"/>
+        <TextBox x:Name="Login_Username_Text_Box" FontSize= "24" FontWeight="Bold" HorizontalAlignment="Left" Height="46" Margin="934,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" TextChanged="Username_Text_Box_TextChanged"/>
+        <PasswordBox x:Name="Login_Password_Box" FontSize= "24" FontWeight="Bold" HorizontalAlignment="Left" Margin="935,515,0,0" VerticalAlignment="Top" Width="322" Height="47"/>
+        <TextBlock x:Name="usernameTextBlock" FontSize =" 32" FontWeight="Bold" HorizontalAlignment="Left" Margin="693,391,0,0" VerticalAlignment="Top" Width="218" Height="57" Text="Username" TextWrapping="Wrap"/>
+        <TextBlock x:Name="password1TextBlock"  FontSize =" 32" FontWeight="Bold" HorizontalAlignment="Left" Margin="693,515,0,0" VerticalAlignment="Top" Width="218" Height="57" Text="Password" TextWrapping="Wrap"/>
+        <TextBox x:Name="Email_Box" Opacity="0" HorizontalAlignment="Left" Height="53" Margin="778,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353"/>
+        <Button Content="Login" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="744,661,0,0" VerticalAlignment="Top" Width="176" Height="79" Click="Login_Button_Click"/>
+        <Button Content="Cancel" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="1044,661,0,0" VerticalAlignment="Top" Width="177" Height="79" Click="Cancel_Button_Click"/>
+    </Grid>
+</UserControl>

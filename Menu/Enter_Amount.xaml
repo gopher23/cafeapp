@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="WPFPageSwitch.Enter_Amount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+            d:DesignWidth="1800" d:DesignHeight="1000">
+    <Grid x:Name="LayoutRoot" Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="661*"/>
+            <RowDefinition Height="339*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/images/food8.jpg" Opacity="0.5" Stretch="UniformToFill" Grid.RowSpan="2"/>
+        <Label Content="Enter an Amount :" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="846,13,0,0" VerticalAlignment="Top" Width="292" Height="50" RenderTransformOrigin="1.07,-0.38"/>
+        <Label Content="    $" FontWeight="Bold" FontSize ="32" HorizontalAlignment="Left" Margin="807,79,0,0" VerticalAlignment="Top" Width="80" Height="62" RenderTransformOrigin="2.765,2.478"/>
+        <TextBox x:Name="TextBox_Message" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Height="62" Margin="900,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" IsReadOnly="True" TextChanged="TextBox_Message_TextChanged" Text="0.00"/>
+        <Button x:Name="Button_7" Content="7" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="775,161,0,0" VerticalAlignment="Top" Width="112" Height="100" Click="Button_Click_7" />
+        <Button x:Name="Button_8" Content="8" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="965,161,0,0" VerticalAlignment="Top" Width="111" Height="100" RenderTransformOrigin="0.31,0.5" Click="Button_Click_8"/>
+        <Button x:Name="Button_9" Content="9" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="1154,161,0,0" VerticalAlignment="Top" Width="115" Height="100" RenderTransformOrigin="1.621,2.682" Click="Button_Click_9"/>
+        <Button x:Name="Button_4" Content="4" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="775,306,0,0" VerticalAlignment="Top" Width="112" Height="98" RenderTransformOrigin="0.586,0.273" Click="Button_Click_4"/>
+        <Button x:Name="Button_5" Content="5" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="965,306,0,0" VerticalAlignment="Top" Width="111" Height="98" RenderTransformOrigin="1.483,1.818" Click="Button_Click_5"/>
+        <Button x:Name="Button_6" Content="6" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="1154,306,0,0" VerticalAlignment="Top" Width="115" Height="98" RenderTransformOrigin="2.655,1.636" Click="Button_Click_6"/>
+        <Button x:Name="Button_1" Content="1" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="775,444,0,0" VerticalAlignment="Top" Width="112" Height= "101" Click="Button_Click_1"/>
+        <Button x:Name="Button_2" Content="2" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="965,444,0,0" VerticalAlignment="Top" Width="111" Height= "101" Click="Button_Click_2"/>
+        <Button x:Name="Button_3" Content="3" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="1154,444,0,0" VerticalAlignment="Top" Width="115" Height="101" Click="Button_Click_3"/>
+        <Button x:Name="Button_0" Content="0" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="775,583,0,0" VerticalAlignment="Top" Width="112" Height="97" RenderTransformOrigin="1.621,2.682" Click="Button_Click_0" Grid.RowSpan="2"/>
+        <Button Content="00" FontSize =" 32" FontWeight="Bold" HorizontalAlignment="Left" Margin="965,583,0,0" VerticalAlignment="Top" Width="111" Height="97" RenderTransformOrigin="0.297,0.183" Click="Button_Click_00" Grid.RowSpan="2"/>
+        <Button x:Name="Button_Clear" Content="C" FontSize ="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="1154,583,0,0" VerticalAlignment="Top" Width="115" Height= "97" RenderTransformOrigin="1.621,2.682" Click="Button_Click_Clear" Grid.RowSpan="2"/>
+        <Button Content="Charge" FontWeight="Bold" FontSize ="32" HorizontalAlignment="Left" Margin="775,101,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.347,0.227" Click="Charge_Button_Click" Height="75" Grid.Row="1"/>
+        <Button x:Name="Close_Register_Button" Content="Close Register" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="74,101,0,0" VerticalAlignment="Top" Width="261" Height="75" RenderTransformOrigin="0.684,0.591" Click="Close_Register_Button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Button x:Name="Open_Button" Content="Open Register" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="393,101,0,0" VerticalAlignment="Top" Width="257" Height="75" Click="Open_Button_Click" IsEnabled="False" Grid.Row="1"/>
+        <Label Content="Remaining Balance: $" FontSize =" 32" FontWeight="Bold" HorizontalAlignment="Left" Margin="56,621,0,0" VerticalAlignment="Top" Width="337" Height="63" Grid.RowSpan="2"/>
+        <Label Content="Prior Balance: $" FontWeight="Bold" FontSize ="32" HorizontalAlignment="Left" Margin="56,505,0,0" VerticalAlignment="Top" Width="279" Height="66"/>
+        <Label Content="Employee Name :" FontWeight="Bold" FontSize ="32" HorizontalAlignment="Left" Margin="56,385,0,0" VerticalAlignment="Top" Width="301" RenderTransformOrigin="0.427,2.5"/>
+        <Image x:Name="pictureBox1" HorizontalAlignment="Left" Height="213" Margin="316,118,0,0" VerticalAlignment="Top" Width="151" Source="/images/unknown.jpg"/>
+        <TextBox x:Name="ID_Text" Opacity="0" HorizontalAlignment="Left" Height="23" Margin="83,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" TextChanged="ID_Text_TextChanged"/>
+        <TextBox x:Name="Mail_box" Opacity="0" HorizontalAlignment="Left" Height="23" Margin="83,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <Label x:Name="Name_Box" Content="" FontSize =" 32" FontWeight="Bold" HorizontalAlignment="Left" Margin="357,385,0,0" VerticalAlignment="Top" Width="307" Height="55"/>
+        <Label x:Name="Remain" Content="" FontSize =" 32" FontWeight="Bold" HorizontalAlignment="Left" Margin="398,621,0,0" VerticalAlignment="Top" Width="266" Height="58" Grid.RowSpan="2"/>
+        <TextBox x:Name="MaxDebitAmount_Textbox" Opacity="0" HorizontalAlignment="Left" Height="23" Margin="129,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cancel" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="1059,101,0,0" Grid.Row="1" VerticalAlignment="Top" Width="210" Height="75" Click="Cancel_Button_Click"/>
+        <Label x:Name="balance" Content="" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Margin="343,505,0,0" VerticalAlignment="Top" Width="307" Height="56"/>
+    </Grid>
+</UserControl>
